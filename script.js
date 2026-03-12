@@ -3,9 +3,10 @@
 // ============================================================
 
 // ---------- Footer year ----------
-document.querySelectorAll('#year').forEach(el => {
-  el.textContent = new Date().getFullYear();
-});
+(function () {
+  var y = new Date().getFullYear();
+  document.querySelectorAll('#year').forEach(function (el) { el.textContent = y; });
+})();
 
 // ---------- Mobile nav toggle ----------
 function toggleNav() {
