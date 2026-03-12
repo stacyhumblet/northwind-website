@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Northwind Consulting</title>
+  <meta name="description" content="Automation, BI dashboards, data reporting, custom tools, and process optimization services from Northwind Consulting." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="logo.jpg" alt="Northwind Consulting" /><span class="nav-logo-text">Northwind Consulting</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Practical automation and data solutions engineered for how your business actually operates.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE BLOCKS ============ -->
+  <section class="section section-alt">
+    <div class="container">
+
+      <!-- 1. Automation -->
+      <div class="service-block">
+        <div class="service-label">
+          <div class="service-icon">⚙️</div>
+          <h2>Automation &amp; Workflow Systems</h2>
+          <div class="service-outcomes">
+            <h4>Typical Outcomes</h4>
+            <ul>
+              <li>Hours of manual work eliminated weekly</li>
+              <li>Reduced human error in recurring processes</li>
+              <li>Faster handoffs between teams and systems</li>
+              <li>Consistent, repeatable operational workflows</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-detail">
+          <p>
+            Manual, repetitive work drains your team's time and introduces errors. Northwind designs end-to-end workflow automation that eliminates bottlenecks, standardizes handoffs, and lets your people focus on higher-value tasks.
+          </p>
+          <p>
+            We start by mapping your current process in detail — identifying every manual step, decision point, and handoff. From there, we design automation that integrates with the tools you already use, whether that's Microsoft Power Automate, Google Apps Script, or custom scripts built around your stack.
+          </p>
+          <p>
+            Our automation systems are built to be maintainable. We document everything, build in error handling, and ensure your team understands how each workflow functions — so you're never dependent on a black box.
+          </p>
+          <p>
+            Common automation engagements include: report generation and distribution, approval routing, data entry between systems, scheduled data pulls, email and notification triggers, and multi-step operational workflows.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. BI Dashboards -->
+      <div class="service-block">
+        <div class="service-label">
+          <div class="service-icon">📊</div>
+          <h2>Business Intelligence &amp; Dashboards</h2>
+          <div class="service-outcomes">
+            <h4>Typical Outcomes</h4>
+            <ul>
+              <li>Real-time KPI visibility for leadership</li>
+              <li>Consolidated view across data sources</li>
+              <li>Faster, more confident decision-making</li>
+              <li>Self-service reporting for operational teams</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-detail">
+          <p>
+            Good decisions require good data, presented clearly and in context. Northwind designs business intelligence dashboards that give your leadership team the visibility they need — without requiring them to dig through spreadsheets or wait for manual reports.
+          </p>
+          <p>
+            We build dashboards in Power BI and Tableau, connecting directly to your data sources to deliver accurate, up-to-date information. Each dashboard is designed with your audience in mind — whether that's a high-level executive summary or a granular operational view for managers.
+          </p>
+          <p>
+            Beyond the visuals, we focus on the underlying data model. Clean, well-structured data powering your dashboards means fewer inconsistencies, faster refresh times, and the ability to answer new questions without rebuilding from scratch.
+          </p>
+          <p>
+            Typical engagements include: executive KPI dashboards, operational performance tracking, financial reporting views, sales and pipeline visibility, and cross-department consolidated reporting.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Data Reporting -->
+      <div class="service-block">
+        <div class="service-label">
+          <div class="service-icon">🗄️</div>
+          <h2>Data Reporting Infrastructure</h2>
+          <div class="service-outcomes">
+            <h4>Typical Outcomes</h4>
+            <ul>
+              <li>Automated report delivery on schedule</li>
+              <li>Single source of truth for key metrics</li>
+              <li>Eliminated manual reconciliation work</li>
+              <li>Reliable, audit-ready reporting outputs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-detail">
+          <p>
+            Many businesses run on reports that someone still has to manually compile, format, and send. This creates risk, inconsistency, and wasted time. Northwind builds reporting infrastructure that automates that entire process — from data collection to formatted output delivery.
+          </p>
+          <p>
+            We design pipelines that pull from your source systems, apply the necessary logic and transformations, and produce clean outputs — whether that's a formatted Excel report, a PDF summary, or data feeding directly into a dashboard.
+          </p>
+          <p>
+            Reporting systems are built with reliability in mind. We include logging, error notifications, and reconciliation checks so issues surface immediately rather than being discovered by a stakeholder who received incorrect numbers.
+          </p>
+          <p>
+            Common reporting engagements include: weekly and monthly operational reports, financial summaries, inventory and fulfillment reporting, sales performance reports, and compliance or regulatory reporting outputs.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. Custom Internal Tools -->
+      <div class="service-block">
+        <div class="service-label">
+          <div class="service-icon">🛠️</div>
+          <h2>Custom Internal Tools</h2>
+          <div class="service-outcomes">
+            <h4>Typical Outcomes</h4>
+            <ul>
+              <li>Replaced fragmented spreadsheet workflows</li>
+              <li>Standardized data entry and tracking</li>
+              <li>Reduced training time for recurring tasks</li>
+              <li>Improved data integrity across teams</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-detail">
+          <p>
+            Off-the-shelf software rarely fits perfectly. Many operational teams end up managing critical processes through a patchwork of spreadsheets, shared documents, and manual tracking — all of which introduce risk and inefficiency.
+          </p>
+          <p>
+            Northwind designs and builds lightweight internal tools purpose-built for your team's workflows. These tools are scoped to do exactly what you need — no unnecessary complexity, no unused features, and no steep learning curves.
+          </p>
+          <p>
+            Depending on your environment, we build tools using Google Apps Script, Excel/VBA automation, Power Apps, or lightweight web-based solutions. The goal is always a tool that your team will actually use and that fits naturally into how you already work.
+          </p>
+          <p>
+            Typical tool engagements include: data entry and tracking applications, internal calculators and estimators, approval and request management tools, inventory and resource tracking systems, and onboarding or process checklists.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. Process Optimization -->
+      <div class="service-block">
+        <div class="service-label">
+          <div class="service-icon">🔍</div>
+          <h2>Process Optimization Consulting</h2>
+          <div class="service-outcomes">
+            <h4>Typical Outcomes</h4>
+            <ul>
+              <li>Identified bottlenecks and waste in workflows</li>
+              <li>Clear roadmap for operational improvements</li>
+              <li>Reduced cycle times on key processes</li>
+              <li>Better alignment across teams and systems</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-detail">
+          <p>
+            Before building anything, it's worth asking whether the current process is the right one to automate. Northwind's process optimization engagements start with a structured review of how your operations actually function — not how they're supposed to function.
+          </p>
+          <p>
+            We interview stakeholders, map current-state workflows, and identify where time is being lost, where errors are introduced, and where handoffs break down. The output is a clear picture of what's happening and a prioritized set of recommendations for improvement.
+          </p>
+          <p>
+            Process optimization often precedes automation or tooling work, ensuring that what we build is the right solution — not just a faster version of a broken process. It can also stand alone as a diagnostic engagement for teams that want an outside perspective on operational efficiency.
+          </p>
+          <p>
+            Typical engagements include: workflow mapping and analysis, bottleneck identification, cross-functional process reviews, technology gap assessments, and operational improvement roadmaps.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Let's Find the Right Solution for Your Business</h2>
+      <p>Every engagement starts with a conversation. Tell us about your operations and where you're feeling the most friction.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><img src="logo.jpg" alt="Northwind Consulting" /><span class="nav-logo-text">Northwind Consulting</span></a>
+          <p>Your Compass to Success — automation, data systems, and reporting solutions that help businesses operate more efficiently.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Workflow Automation</a></li>
+            <li><a href="services.html">BI Dashboards</a></li>
+            <li><a href="services.html">Data Reporting</a></li>
+            <li><a href="services.html">Process Optimization</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Northwind Consulting. All rights reserved.</span>
+        <span>Built for businesses that run on good data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

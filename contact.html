@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Northwind Consulting</title>
+  <meta name="description" content="Get in touch with Northwind Consulting to schedule a consultation about automation, dashboards, or data systems." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="logo.jpg" alt="Northwind Consulting" /><span class="nav-logo-text">Northwind Consulting</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Tell us about your business and what you're working on. We'll follow up to schedule a conversation.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <span class="section-tag">Contact Us</span>
+          <h2>Start the Conversation</h2>
+          <p>
+            Whether you have a specific project in mind or just want to explore where automation and better data systems could help, we're happy to talk. Fill out the form and we'll be in touch within one business day.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-item">
+              <div class="ci-icon">💬</div>
+              <div>
+                <h4>Response Time</h4>
+                <p>We respond to all inquiries within one business day.</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">📋</div>
+              <div>
+                <h4>Initial Consultation</h4>
+                <p>First call is a no-pressure conversation about your operations and goals.</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">🔒</div>
+              <div>
+                <h4>Confidentiality</h4>
+                <p>All information shared during discovery is kept strictly confidential.</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">🌐</div>
+              <div>
+                <h4>Remote &amp; On-Site</h4>
+                <p>We work with clients remotely and on-site depending on project needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-card">
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span style="color:var(--teal)">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Acme Corp" autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span style="color:var(--teal)">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Area of Interest</label>
+              <input type="text" id="service" name="service" placeholder="e.g. Workflow Automation, BI Dashboard, Reporting…" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span style="color:var(--teal)">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us about your business, what you're trying to solve, or what you'd like to automate or improve…" required></textarea>
+            </div>
+
+            <p class="form-note">Fields marked with * are required.</p>
+
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+
+            <div class="form-success" id="formSuccess">
+              ✓ &nbsp;Thanks for reaching out! We'll be in touch within one business day.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><img src="logo.jpg" alt="Northwind Consulting" /><span class="nav-logo-text">Northwind Consulting</span></a>
+          <p>Your Compass to Success — automation, data systems, and reporting solutions that help businesses operate more efficiently.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Workflow Automation</a></li>
+            <li><a href="services.html">BI Dashboards</a></li>
+            <li><a href="services.html">Data Reporting</a></li>
+            <li><a href="services.html">Process Optimization</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Northwind Consulting. All rights reserved.</span>
+        <span>Built for businesses that run on good data.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

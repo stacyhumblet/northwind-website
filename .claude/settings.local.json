@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "c:\\Users\\stacy\\.vscode\\Projects\\northwind website"
+    ],
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(identify 'c:/Users/stacy/.vscode/Projects/northwind website/logo.jpg')"
+    ]
+  }
+}
