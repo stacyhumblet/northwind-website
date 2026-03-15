@@ -116,7 +116,8 @@
 
         <!-- Right: Form -->
         <div class="contact-form-card">
-          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <form id="contactForm" name="contact" netlify onsubmit="handleSubmit(event)" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name <span style="color:var(--teal)">*</span></label>

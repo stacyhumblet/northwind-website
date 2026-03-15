@@ -47,18 +47,28 @@ function handleSubmit(e) {
     return;
   }
 
-  // Simulate submission
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  setTimeout(() => {
-    form.querySelectorAll('input, textarea').forEach(el => el.value = '');
-    success.classList.add('visible');
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
+  const data = new FormData(form);
 
-    setTimeout(() => success.classList.remove('visible'), 6000);
-  }, 800);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString(),
+  })
+    .then(() => {
+      form.querySelectorAll('input, textarea').forEach(el => el.value = '');
+      success.classList.add('visible');
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      setTimeout(() => success.classList.remove('visible'), 6000);
+    })
+    .catch(() => {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      alert('Something went wrong — please try again or email us directly.');
+    });
 }
 
 // ---------- Scroll-in animation (optional enhancement) ----------
