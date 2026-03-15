@@ -71,6 +71,8 @@
 .creator-page p    { color: var(--cr-text-muted); }
 .creator-page a    { color: var(--cr-cyan); text-decoration: none; transition: color var(--cr-transition); }
 .creator-page a:hover { color: var(--cr-cyan-light); }
+.creator-page .cr-btn { color: #ffffff; }
+.creator-page .cr-btn:hover { color: #ffffff; }
 
 .creator-page h1, .creator-page h2,
 .creator-page h3, .creator-page h4 {
