@@ -107,8 +107,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               </div>
               <div>
-                <h4>Remote &amp; On-Site</h4>
-                <p>We work with clients remotely and on-site depending on project needs.</p>
+                <h4>100% Remote</h4>
+                <p>We work with clients fully remotely — no travel required, no geographic limits.</p>
               </div>
             </div>
           </div>
@@ -116,8 +116,11 @@
 
         <!-- Right: Form -->
         <div class="contact-form-card">
-          <form id="contactForm" name="contact" netlify onsubmit="handleSubmit(event)" novalidate>
-            <input type="hidden" name="form-name" value="contact" />
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <input type="hidden" name="access_key" value="43da27cd-587b-4124-bedb-210a9b12d66f" />
+            <input type="hidden" name="to" value="stacy.humblet@gmail.com,northwindconsultinginc@gmail.com" />
+            <input type="hidden" name="subject" value="New Contact Request — Northwind Consulting" />
+            <input type="hidden" name="from_name" value="Northwind Consulting Website" />
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name <span style="color:var(--teal)">*</span></label>

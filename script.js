@@ -51,23 +51,29 @@ function handleSubmit(e) {
   btn.disabled = true;
 
   const data = new FormData(form);
+  const json = Object.fromEntries(data.entries());
 
-  fetch('/', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(data).toString(),
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(json),
   })
-    .then(() => {
-      form.querySelectorAll('input, textarea').forEach(el => el.value = '');
-      success.classList.add('visible');
+    .then(res => res.json())
+    .then(res => {
+      if (res.success) {
+        form.querySelectorAll('input:not([type=hidden]), textarea').forEach(el => el.value = '');
+        success.classList.add('visible');
+        setTimeout(() => success.classList.remove('visible'), 6000);
+      } else {
+        alert('Something went wrong — please try again.');
+      }
       btn.textContent = 'Send Message';
       btn.disabled = false;
-      setTimeout(() => success.classList.remove('visible'), 6000);
     })
     .catch(() => {
       btn.textContent = 'Send Message';
       btn.disabled = false;
-      alert('Something went wrong — please try again or email us directly.');
+      alert('Something went wrong — please try again.');
     });
 }
 
