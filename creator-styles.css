@@ -523,6 +523,13 @@
   line-height: 1.4;
 }
 
+.cr-platform-note {
+  font-size: .75rem;
+  color: var(--cr-text-dim);
+  margin: 8px 0 0;
+  opacity: .8;
+}
+
 /* Core vs Custom split */
 .cr-core-custom {
   display: flex;
