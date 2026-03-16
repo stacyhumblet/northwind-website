@@ -74,6 +74,207 @@
     </div>
   </section>
 
+  <!-- ============ USE CASES ============ -->
+  <section class="cr-section cr-section-alt" id="why-northwind">
+    <div class="cr-container">
+      <div class="cr-section-header">
+        <span class="cr-tag">Sound Familiar?</span>
+        <h2>What Your Analytics Can't Tell You — Yet</h2>
+        <p>Platform analytics are built to show you what happened inside their walls. Here's what they'll never show you on their own.</p>
+      </div>
+
+      <div class="cr-usecases-grid">
+
+        <!-- Use case 1 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">🔀</div>
+            <div class="cr-usecase-title">
+              <h4>You're checking three platforms to get one picture</h4>
+              <p class="cr-usecase-teaser">Shopify. Then Instagram. Then TikTok. Separately.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>Right now you open Shopify to check sales, switch to Instagram to check content, then open TikTok to check views — and there's no single place where all three talk to each other. You're manually connecting dots that should be automatic. Our dashboards pull all three into one view so you can see the full picture at once, not in three browser tabs.</p>
+          </div>
+        </div>
+
+        <!-- Use case 2 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">🎯</div>
+            <div class="cr-usecase-title">
+              <h4>You have no way to set a goal and track whether you'll hit it</h4>
+              <p class="cr-usecase-teaser">Platforms show what happened. Not whether you're on pace.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>Native analytics tell you your revenue last month was $18,000. But is that good? Are you ahead of target? Behind? On pace for your quarterly goal? No platform will tell you that — because they don't know your targets. Our dashboards include a Goals & Targets layer where you set the number, and we show you exactly where you stand against it, updated automatically.</p>
+          </div>
+        </div>
+
+        <!-- Use case 3 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">📈</div>
+            <div class="cr-usecase-title">
+              <h4>You can't see where you're headed — only where you've been</h4>
+              <p class="cr-usecase-teaser">No platform shows you a forecast. They only report history.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>Every platform analytics tool is a rearview mirror. They show you what already happened. None of them tell you: "at your current pace, you'll hit $X by end of month" or "your follower growth is trending toward Y by Q3." We build trend-based forecasting directly into your dashboards so you can see what's coming — not just what already passed.</p>
+          </div>
+        </div>
+
+        <!-- Use case 4 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">🔗</div>
+            <div class="cr-usecase-title">
+              <h4>You don't know which post actually drove that sale</h4>
+              <p class="cr-usecase-teaser">IG shows reach. Shopify shows revenue. Nobody connects them.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>Instagram will tell you a Reel got 40,000 views. Shopify will tell you you had a great sales day. But neither platform will tell you those two things are related — or by how much. We build the attribution layer that maps social content to downstream purchases, so you know exactly which posts are driving revenue and which ones are just getting views.</p>
+          </div>
+        </div>
+
+        <!-- Use case 5 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">📅</div>
+            <div class="cr-usecase-title">
+              <h4>You can't annotate your own data</h4>
+              <p class="cr-usecase-teaser">Platforms don't know about your promotions, collabs, or price changes.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>You ran a 20% off sale. You posted a collab with a big creator. You changed your pricing. Platforms have no idea any of that happened — so when you look at a spike in your data three months later, you have no context for why it happened. Our annotation layer lets you mark events directly on your charts so your data always tells the full story, not just the numbers.</p>
+          </div>
+        </div>
+
+        <!-- Use case 6 -->
+        <div class="cr-usecase-card">
+          <div class="cr-usecase-header" onclick="toggleUseCase(this)">
+            <div class="cr-usecase-icon">💸</div>
+            <div class="cr-usecase-title">
+              <h4>Revenue looks great — but you don't know your actual profit</h4>
+              <p class="cr-usecase-teaser">Shopify knows your sales. It doesn't know your costs.</p>
+            </div>
+            <div class="cr-usecase-arrow">▾</div>
+          </div>
+          <div class="cr-usecase-body">
+            <p>Shopify reports revenue and orders — but it doesn't know your cost of goods, your ad spend, your shipping overhead, or your software subscriptions. We can connect your business expense data alongside your Shopify revenue to give you a true net margin view. Because a $30,000 revenue month with $28,000 in costs is a very different story than the analytics dashboard suggests.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="creator-contact.html" class="cr-btn cr-btn-primary">Let's Build Your Dashboard →</a>
+      </div>
+    </div>
+
+    <style>
+      .cr-usecases-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      .cr-usecase-card {
+        background: var(--cr-card);
+        border: 1px solid var(--cr-border);
+        border-radius: var(--cr-radius);
+        overflow: hidden;
+        transition: border-color 0.2s;
+      }
+      .cr-usecase-card:hover {
+        border-color: rgba(168,85,247,.35);
+      }
+      .cr-usecase-card.open {
+        border-color: rgba(168,85,247,.5);
+      }
+
+      .cr-usecase-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 20px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .cr-usecase-icon {
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .cr-usecase-title {
+        flex: 1;
+      }
+      .cr-usecase-title h4 {
+        font-size: .92rem;
+        font-weight: 700;
+        color: var(--cr-text);
+        margin: 0 0 4px;
+        line-height: 1.4;
+      }
+      .cr-usecase-teaser {
+        font-size: .78rem;
+        color: var(--cr-text-dim);
+        margin: 0;
+      }
+
+      .cr-usecase-arrow {
+        font-size: .9rem;
+        color: var(--cr-text-dim);
+        flex-shrink: 0;
+        margin-top: 2px;
+        transition: transform 0.2s;
+      }
+      .cr-usecase-card.open .cr-usecase-arrow {
+        transform: rotate(180deg);
+        color: var(--cr-purple-light);
+      }
+
+      .cr-usecase-body {
+        display: none;
+        padding: 0 20px 20px 20px;
+        padding-left: 54px;
+        font-size: .88rem;
+        line-height: 1.7;
+        color: var(--cr-text-dim);
+        border-top: 1px solid var(--cr-border);
+        padding-top: 16px;
+      }
+      .cr-usecase-body p { margin: 0; }
+      .cr-usecase-card.open .cr-usecase-body {
+        display: block;
+      }
+
+      @media (max-width: 720px) {
+        .cr-usecases-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+
+    <script>
+      function toggleUseCase(header) {
+        const card = header.closest('.cr-usecase-card');
+        card.classList.toggle('open');
+      }
+    </script>
+  </section>
+
   <!-- ============ PLATFORM CARDS ============ -->
   <section class="cr-section cr-section-alt" id="platforms">
     <div class="cr-container">
