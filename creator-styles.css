@@ -528,8 +528,10 @@
 .cr-platform-note {
   font-size: .75rem;
   color: var(--cr-text-dim);
-  margin: 8px 0 0;
+  margin: 12px 0 0;
   opacity: .8;
+  padding-top: 12px;
+  border-top: 1px solid var(--cr-border);
 }
 
 /* Core vs Custom split */
@@ -537,6 +539,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: auto;
 }
 
 .cr-include-block {
