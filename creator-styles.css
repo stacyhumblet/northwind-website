@@ -413,6 +413,7 @@
 .cr-platforms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
   gap: 28px;
 }
 
@@ -421,8 +422,9 @@
   border: 1px solid var(--cr-border);
   border-radius: var(--cr-radius-xl);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
   transition: all var(--cr-transition);
 }
 .cr-platform-card:hover {
@@ -485,9 +487,9 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
-.shopify  .cr-data-section h5 { color: var(--cr-shopify); }
-.instagram .cr-data-section h5 { color: var(--cr-ig); }
-.tiktok   .cr-data-section h5 { color: var(--cr-tt); }
+.shopify  .cr-data-section h5,
+.instagram .cr-data-section h5,
+.tiktok   .cr-data-section h5 { color: var(--cr-text); }
 
 .cr-data-section ul {
   list-style: none;
