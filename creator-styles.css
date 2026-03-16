@@ -433,9 +433,9 @@
   box-shadow: var(--cr-shadow-card);
 }
 
-.cr-platform-card.shopify:hover  { border-color: rgba(150,191,72,.4); box-shadow: 0 0 40px rgba(150,191,72,.12), var(--cr-shadow-card); }
-.cr-platform-card.instagram:hover { border-color: rgba(225,48,108,.4);  box-shadow: 0 0 40px rgba(225,48,108,.12), var(--cr-shadow-card); }
-.cr-platform-card.tiktok:hover    { border-color: rgba(238,29,82,.4);    box-shadow: 0 0 40px rgba(238,29,82,.12), var(--cr-shadow-card); }
+.cr-platform-card.shopify:hover,
+.cr-platform-card.instagram:hover,
+.cr-platform-card.tiktok:hover { border-color: rgba(168,85,247,.5); box-shadow: 0 0 40px rgba(168,85,247,.15), var(--cr-shadow-card); }
 
 .cr-platform-header {
   padding: 28px 28px 20px;
