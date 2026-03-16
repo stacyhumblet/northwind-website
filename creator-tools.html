@@ -315,8 +315,9 @@
     .demo-table td:first-child { color: var(--cr-text); font-weight: 500; }
 
     /* ─ Color schemes ─ */
-    .scheme-purple  { --demo-accent1: #a855f7; --demo-accent2: #06b6d4; --demo-accent3: #10b981; }
-    .scheme-ocean   { --demo-accent1: #0ea5e9; --demo-accent2: #22d3ee; --demo-accent3: #06b6d4; }
+    .scheme-creator { --demo-accent1: #a855f7; --demo-accent2: #06b6d4; --demo-accent3: #10b981; }
+    .scheme-slate   { --demo-accent1: #5a9fc2; --demo-accent2: #3d7fa0; --demo-accent3: #7b93b0; }
+    .scheme-ocean   { --demo-accent1: #0ea5e9; --demo-accent2: #22d3ee; --demo-accent3: #38bdf8; }
     .scheme-sunset  { --demo-accent1: #f97316; --demo-accent2: #ec4899; --demo-accent3: #f59e0b; }
     .scheme-forest  { --demo-accent1: #10b981; --demo-accent2: #34d399; --demo-accent3: #6ee7b7; }
     .scheme-rose    { --demo-accent1: #e879f9; --demo-accent2: #a855f7; --demo-accent3: #818cf8; }
@@ -390,9 +391,13 @@
       <div class="demo-controls">
         <span class="demo-controls-label">Color Scheme</span>
         <div class="demo-scheme-pills">
-          <button class="demo-scheme-pill active" onclick="setScheme('purple',this)">
+          <button class="demo-scheme-pill active" onclick="setScheme('creator',this)">
             <div class="demo-scheme-swatch" style="background:linear-gradient(135deg,#a855f7,#06b6d4)"></div>
             Creator
+          </button>
+          <button class="demo-scheme-pill" onclick="setScheme('slate',this)">
+            <div class="demo-scheme-swatch" style="background:linear-gradient(135deg,#5a9fc2,#7b93b0)"></div>
+            Slate
           </button>
           <button class="demo-scheme-pill" onclick="setScheme('ocean',this)">
             <div class="demo-scheme-swatch" style="background:linear-gradient(135deg,#0ea5e9,#22d3ee)"></div>
@@ -407,7 +412,7 @@
             Forest
           </button>
           <button class="demo-scheme-pill" onclick="setScheme('rose',this)">
-            <div class="demo-scheme-swatch" style="background:linear-gradient(135deg,#e879f9,#818cf8)"></div>
+            <div class="demo-scheme-swatch" style="background:linear-gradient(135deg,#e879f9,#a855f7)"></div>
             Rose
           </button>
         </div>
@@ -419,7 +424,7 @@
       </div>
 
       <!-- Dashboard Chrome -->
-      <div class="demo-chrome scheme-purple" id="dashChrome">
+      <div class="demo-chrome scheme-creator" id="dashChrome">
 
         <!-- Top bar -->
         <div class="demo-topbar">
@@ -660,13 +665,14 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const schemeColors = {
-      purple: ['#a855f7','#06b6d4','#10b981'],
-      ocean:  ['#0ea5e9','#22d3ee','#06b6d4'],
-      sunset: ['#f97316','#ec4899','#f59e0b'],
-      forest: ['#10b981','#34d399','#6ee7b7'],
-      rose:   ['#e879f9','#a855f7','#818cf8'],
+      creator: ['#a855f7','#06b6d4','#10b981'],
+      slate:   ['#5a9fc2','#3d7fa0','#7b93b0'],
+      ocean:   ['#0ea5e9','#22d3ee','#38bdf8'],
+      sunset:  ['#f97316','#ec4899','#f59e0b'],
+      forest:  ['#10b981','#34d399','#6ee7b7'],
+      rose:    ['#e879f9','#a855f7','#818cf8'],
     };
-    let currentScheme = 'purple';
+    let currentScheme = 'creator';
     let isDark = true;
 
     function setScheme(scheme, btn) {
