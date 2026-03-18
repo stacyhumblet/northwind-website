@@ -1,6 +1,9 @@
 // ============================================================
-//  Northwind Consulting — script.js
+//  Northwind Consulting™ - script.js
 // ============================================================
+// Copyright © 2026 Northwind Consulting™. All rights reserved.
+// Unauthorized copying, reverse engineering, or redistribution
+// of this software is strictly prohibited.
 
 // ---------- Footer year ----------
 (function () {
@@ -65,7 +68,7 @@ function handleSubmit(e) {
         success.classList.add('visible');
         setTimeout(() => success.classList.remove('visible'), 6000);
       } else {
-        alert('Something went wrong — please try again.');
+        alert('Something went wrong - please try again.');
       }
       btn.textContent = 'Send Message';
       btn.disabled = false;
@@ -73,7 +76,7 @@ function handleSubmit(e) {
     .catch(() => {
       btn.textContent = 'Send Message';
       btn.disabled = false;
-      alert('Something went wrong — please try again.');
+      alert('Something went wrong - please try again.');
     });
 }
 
