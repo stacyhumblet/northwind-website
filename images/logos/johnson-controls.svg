@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60">
-  <!-- JCI leaf mark approximation -->
-  <ellipse cx="18" cy="30" rx="14" ry="22" fill="#005B2B" transform="rotate(-15 18 30)"/>
-  <ellipse cx="18" cy="30" rx="8" ry="16" fill="white" transform="rotate(-15 18 30)"/>
-  <text x="40" y="43" font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#005B2B" letter-spacing="0.2">Johnson Controls</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 72" width="310" height="72">
+  <ellipse cx="22" cy="36" rx="17" ry="27" fill="#005B2B" transform="rotate(-15 22 36)"/>
+  <ellipse cx="22" cy="36" rx="10" ry="18" fill="white" transform="rotate(-15 22 36)"/>
+  <text x="50" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#005B2B" letter-spacing="0.2">Johnson Controls</text>
 </svg>
